@@ -148,8 +148,6 @@ func processUpdateEvent(d *data, ev *updateEvent) error {
 
 	commitURL := fmt.Sprintf("https://source.cloud.google.com/%s/%s/+/%s", projectID, repoName, ev.NewID)
 
-	// https://source.developers.google.com/p/moonrhythm-core/r/makro-accountconnect/8de10e0d546f9d86799597770a373de0a1c2ec8d
-
 	return sendSlackMessage(&slackMsg{
 		Attachments: []slackAttachment{
 			{
