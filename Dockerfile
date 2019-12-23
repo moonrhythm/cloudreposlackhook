@@ -1,5 +1,5 @@
 FROM gcr.io/moonrhythm-containers/go-scratch
 
-ADD entrypoint /entrypoint
+ADD cloudreposlackhook /cloudreposlackhook
 
-CMD ["./entrypoint"]
+CMD ["./cloudreposlackhook"]
